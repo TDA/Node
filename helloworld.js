@@ -1,0 +1,12 @@
+console.log("hello world");
+var buf = new Buffer('Hello World!');
+var buf1 = new Buffer('8b76fde713ce','base64');
+console.log(buf[0]);
+console.log(buf1[0]);
+var buf2 = new Buffer(1024);
+console.log(buf2);
+console.log(buf.length);
+console.log(buf.slice(6,14).toString());
+var buf3 = new Buffer(10);
+buf.copy(buf3,0,6,14);
+console.log(buf3.toString());
